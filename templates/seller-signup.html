@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='seller-signup.css') }}">
+</head>
+<body>
+    <div class="signup-container" style="padding: 40px;">
+        <h2>Seller Sign Up</h2>
+        <form id="signup-form" action="/process" method="post">
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="new-username">New Username *</label>
+                <input type="text" id="new-username" name="new-username" placeholder="Create a new username" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password *</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Create a new password" required>
+            </div>
+            <div class="form-group">
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="address-proof">Address Proof (Upload)</label>
+                <input type="file" id="address-proof" name="address-proof" required>
+            </div>
+            <div class="form-group">
+                <label for="bank-account">Bank Account Details *</label>
+                <input type="text" id="bank-account" name="bank-account" placeholder="Enter your bank account details" required>
+            </div>
+            <div class="form-group">
+                <label for="product-details">Product Details (Optional)</label>
+                <textarea id="product-details" name="product-details" placeholder="Enter details about the products you sell"></textarea>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+   <script src="{{ url_for('static', filename='seller-signup.js') }}"></script>
+</body>
+</html>

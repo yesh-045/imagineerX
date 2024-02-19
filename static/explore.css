@@ -1,0 +1,256 @@
+/* Reset Styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust margin to the right as needed */
+    margin-top: 5px; /* Move the text up by adjusting the margin */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other content */
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Adjust padding for body */
+body {
+    padding-top: 60px; /* Adjust as needed based on header height */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Featured Products Section Styles */
+/* Featured Products Section Styles */
+.featured-products {
+    margin-top: 20px; /* Adjust top margin to move it up */
+    padding: 10px 0; /* Keep the original padding if necessary */
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Add custom styles for products */
+.product-grid {
+    display: flex;
+    justify-content: flex-start; /* Align products to the left */
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between products */
+    margin-top: 20px; /* Add some top margin */
+}
+
+.product-card {
+    width: 18%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Increase the box shadow on hover */
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+.product-card h3 {
+    margin-top: 20px;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Search Box Styles */
+.search-box {
+    flex-grow: 1; /* Take up remaining space */
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    width: 125px; /* Adjust width as needed */
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 25px; /* Apply border radius */
+    border: 1px solid #ccc; /* Add border */
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Apply border radius */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for background color and box shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.search-box button:hover {
+    background-color: #16a085; /* Darker green color on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase the box shadow on hover */
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom:30p
+}
+.btn {
+    padding: 5px 7px;
+    background-color: #1abc9c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Adjust font size */
+}
+
+.btn:hover {
+    background-color: #16a085;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Added translateY on hover */
+}
+/* Add these styles to align search box and profile button to the right */
+/* Update styles to center align search box and profile button with margin to the right */
+.search-box {
+    flex-grow: 1; /* Take up remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items to the center */
+    margin-right: 20px; /* Add margin to the right */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: auto; /* Move the first item to the right */
+}
+
+/* Add custom styles for categories */
+.categories {
+    text-align: center;
+}
+
+.categories div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+
+.categories p {
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.categories p:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.product-card button {
+    padding: 5px 10px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    margin-top:5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card button:hover {
+    background-color: #16a085;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

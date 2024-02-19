@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Connect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="art.css") }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Artisan Connect</div>
+            <nav>
+                <ul>
+                    <li><a href="/u_l" class="login-btn">User Login</a></li>
+                    <li><a href="/s_l" class="login-btn">Seller Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Empowering Artisans Worldwide</h1>
+            <p>Welcome to Artisan Connect, where tradition meets innovation.</p>
+            <button id="explore-btn">Explore Creations</button> <!-- Removed the unnecessary anchor tag -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="{{ url_for('static', filename="about.html") }}">About</a></li>
+                <li><a href="{{ url_for('static', filename="contact.html") }}">Contact</a></li>
+                <li><a href="{{ url_for('static', filename="privacy-policy.html") }}">Privacy Policy</a></li>
+                <li><a href="{{ url_for('static', filename="terms.html") }}">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the explore creations button
+            var exploreBtn = document.getElementById("explore-btn");
+
+            // Add onclick event to explore creations button
+            exploreBtn.addEventListener("click", function() {
+                // Check if the user is logged in
+                if (!isLoggedIn()) {
+                    // User is not logged in, show alert message
+                    alert("You have to sign in or sign up to explore creations.");
+                }
+                // For demonstration, always return false
+                return false;
+            });
+
+            // Function to check if the user is logged in
+            function isLoggedIn() {
+                // Implement your logic here to check if the user is logged in
+                // For demonstration, always return false
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>
